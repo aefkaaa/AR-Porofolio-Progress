@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website dengan Splash Screen</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="splash">
+      <img id="splash-logo" src="./assets/img/logoml.png" />
+    </div>
+    <div id="main-content" class="hidden">
+        <section id="dashboard">
+            <h1>Welcome to Our Project</h1>
+            <div class="grid-container">
+                <div class="grid-item" onclick="showSection('about')">
+                    <h2>About</h2>
+                    <p>Keterangan singkat tentang projek ini.</p>
+                </div>
+                <div class="grid-item" onclick="showSection('guide')">
+                    <h2>Guide</h2>
+                    <p>Cara penggunaan fitur di website ini.</p>
+                </div>
+                <div class="grid-item" onclick="showSection('marker')">
+                    <h2>Marker</h2>
+                    <p>Unduh file PDF yang dibutuhkan</p>
+                </div>
+                <div class="grid-item" onclick="showSection('ar')">
+                    <h2>AR</h2>
+                    <p>Scan Kartu AR.</p>
+                </div>
+            </div>
+        </section>
+        <section id="about-section" class="hidden">
+            <h1>About</h1>
+            <p>Hello my name is Farhat Febrianto Welcome to my portfolio! Here, you'll find a showcase of my augmented reality project, the culmination of my studies in AR at Lampung University. Augmented reality (AR) is a technology that overlays digital information onto the real world, enhancing our perception of reality. In this project, I've explored the potential of AR to create immersive and interactive experiences. Dive into this project to see how I've applied AR technology and the skills I've developed during my academic journey. Thank you for taking the time to explore this significant piece of my educational experience.
+              .</p>
+            <div class="button-container">
+                <button onclick="showSection('dashboard')">Back to Dashboard</button>
+            </div>
+        </section>
+        <section id="guide-section" class="hidden">
+            <h1>Guide</h1>
+            <p>Berikut adalah cara menggunakan fitur-fitur di website ini:
+                <ul>
+                    <li>Fitur About: Klik tombol "About" untuk melihat informasi tentang projek.</li>
+                    <li>Fitur Guide: Klik tombol "Guide" untuk mengetahui cara menggunakan fitur-fitur di website ini.</li>
+                    <li>Fitur Marker: Klik tombol "Marker" untuk mengunduh file PDF yang diperlukan.</li>
+                    <li>Fitur AR: Klik tombol "AR" untuk menggunakan fitur scan kartu.</li>
+                </ul>
+            </p>
+            <div class="button-container">
+                <button onclick="showSection('dashboard')">Back to Dashboard</button>
+            </div>
+        </section>
+        <section id="marker-section" class="hidden">
+            <h1>Marker</h1>
+            <p>Unduh file PDF yang dibutuhkan untuk proyek ini:</p>
+            <a href="path/to/your/pdf.pdf" download>Download PDF</a>
+            <div class="button-container">
+                <button onclick="showSection('dashboard')">Back to Dashboard</button>
+            </div>
+        </section>
+        <section id="ar-section" class="hidden">
+            <h1>AR</h1>
+            <p>Gunakan fitur AR untuk melakukan scan kartu.</p>
+            <a href="https://aefkaaa.github.io/AR-KartuNama/" target="_blank" class="button">Scan Kartu</a>
+            <div class="button-container">
+                <button onclick="showSection('dashboard')">Back to Dashboard</button>
+            </div>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
